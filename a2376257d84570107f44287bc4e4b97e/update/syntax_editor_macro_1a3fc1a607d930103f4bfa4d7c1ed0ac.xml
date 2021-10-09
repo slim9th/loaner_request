@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
     <syntax_editor_macro action="INSERT_OR_UPDATE">
-        <comments>//Scheduled Script Execution macro from ADF</comments>
+        <comments>//LoanerUtils for ADF training</comments>
         <name>lu</name>
         <sys_class_name>syntax_editor_macro</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-07-15 03:08:08</sys_created_on>
         <sys_id>1a3fc1a607d930103f4bfa4d7c1ed0ac</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>lu</sys_name>
         <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope>
         <sys_update_name>syntax_editor_macro_1a3fc1a607d930103f4bfa4d7c1ed0ac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-07-15 03:08:08</sys_updated_on>
+        <sys_updated_on>2021-08-06 01:52:30</sys_updated_on>
         <text>var LoanerUtils = Class.create();&#13;
 LoanerUtils.prototype = {&#13;
   /**********&#13;

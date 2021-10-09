@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>x_cdltd_loaner_req_loaner_request_script_1</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[//manual entry for if and dynamic field
+    if (current.item_type == 'cmdb_ci_computer') {
+        var request = new sn_ws.RESTMessageV2();
+        request.setEndpoint('https://dev109475.service-now.com/api/now/table/u_password_vault?sysparm_query=u_asset%3D' + current.cmdb_ci.asset_tag +'&sysparm_fields=u_password&sysparm_limit=1');
+        request.setHttpMethod('GET');
+    }
+    //update user and password here
+    var user = 't.man';
+    var password = 'serv1ceN0w!';
+    request.setBasicAuth(user, password);
+    request.setRequestHeader("Accept", "application/json");
+    var response = request.execute();
+    template.print(response.getBody());
+ 
+ //parse password in json format
+ var obj = JSON.parse(response.getBody());
+ var myPass = obj.result[0].u_password;
+ template.print('u_password: ' + myPass);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-06 01:01:55</sys_created_on>
+        <sys_id>ebd682ad07f13010c0d7f8ed7c1ed032</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_loaner_req_loaner_request_script_1</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope>
+        <sys_update_name>sys_script_email_ebd682ad07f13010c0d7f8ed7c1ed032</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-06 01:01:55</sys_updated_on>
+    </sys_script_email>
+</record_update>

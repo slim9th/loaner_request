@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="INSERT_OR_UPDATE">
+        <comments>// MapPage for ADF training</comments>
+        <name>mp</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-06 01:51:18</sys_created_on>
+        <sys_id>be2252e507353010c0d7f8ed7c1ed045</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>mp</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope>
+        <sys_update_name>syntax_editor_macro_be2252e507353010c0d7f8ed7c1ed045</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-06 01:52:02</sys_updated_on>
+        <text>var gr = new GlideRecord('x_cdltd_loaner_req_loaner_request');&#13;
+gr.addEncodedQuery("active=true^requested_for.cityISNOTEMPTY");&#13;
+gr.query();&#13;
+&#13;
+while(gr.next()){&#13;
+	&#13;
+	//  Add copied  REST Message Script BELOW this line&#13;
+	&#13;
+	&#13;
+	&#13;
+	//  Add copied REST Message script ABOVE this line&#13;
+	&#13;
+	&#13;
+	// Extract latitude and longitude values from REST Message response&#13;
+	var xmlDoc = new XMLDocument2();&#13;
+	xmlDoc.parseXML(responseBody);&#13;
+	var myLat= xmlDoc.getNodeText("//latitude");&#13;
+	var myLong= xmlDoc.getNodeText("//longitude");&#13;
+	&#13;
+	// Plot each Requested for's location on a google map&#13;
+	var item = map.addItem(gr);&#13;
+	item.latitude = String(myLat);&#13;
+	item.longitude = String(myLong);&#13;
+	item.dialog_title = gr.getDisplayValue();&#13;
+	item.icon = "https://maps.google.com/mapfiles/ms/micons/yellow.png";&#13;
+	item.icon_width = "32";&#13;
+	item.icon_height = "32";&#13;
+}&#13;
+</text>
+    </syntax_editor_macro>
+</record_update>

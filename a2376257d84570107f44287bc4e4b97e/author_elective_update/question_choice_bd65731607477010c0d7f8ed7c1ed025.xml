@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>2</order>
+        <published_ref display_value="Projector">9e9433d207477010c0d7f8ed7c1ed003</published_ref>
+        <question display_value="Item type">3565731607477010c0d7f8ed7c1ed017</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>t.man</sys_created_by>
+        <sys_created_on>2021-10-09 20:18:48</sys_created_on>
+        <sys_id>bd65731607477010c0d7f8ed7c1ed025</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Projector</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope>
+        <sys_update_name>question_choice_bd65731607477010c0d7f8ed7c1ed025</sys_update_name>
+        <sys_updated_by>t.man</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:18:48</sys_updated_on>
+        <text>Projector</text>
+        <value>cmdb_ci_projector</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=bd65731607477010c0d7f8ed7c1ed025"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</application>
+        <file_path/>
+        <instance_id>d832448cdbf913c07e55d5b0cf9619c8</instance_id>
+        <instance_name>dev57314</instance_name>
+        <name>question_choice_bd65731607477010c0d7f8ed7c1ed025</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>2</order><published_ref display_value="Projector">9e9433d207477010c0d7f8ed7c1ed003</published_ref><question display_value="Item type">3565731607477010c0d7f8ed7c1ed017</question><sys_class_name>question_choice</sys_class_name><sys_created_by>t.man</sys_created_by><sys_created_on>2021-10-09 20:18:48</sys_created_on><sys_id>bd65731607477010c0d7f8ed7c1ed025</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Projector</sys_name><sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package><sys_policy/><sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope><sys_update_name>question_choice_bd65731607477010c0d7f8ed7c1ed025</sys_update_name><sys_updated_by>t.man</sys_updated_by><sys_updated_on>2021-10-09 20:18:48</sys_updated_on><text>Projector</text><value>cmdb_ci_projector</value></question_choice><fx_price action="delete_multiple" query="id=bd65731607477010c0d7f8ed7c1ed025"/></record_update>]]></payload>
+        <payload_hash>-1183730666</payload_hash>
+        <record_name>Projector</record_name>
+        <reverted_from/>
+        <source>2cf6374107b13010c0d7f8ed7c1ed0c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>t.man</sys_created_by>
+        <sys_created_on>2021-10-09 20:18:48</sys_created_on>
+        <sys_id>4665731607477010c0d7f8ed7c1ed028</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17c66b547110000001</sys_recorded_at>
+        <sys_updated_by>t.man</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:18:48</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>ca65731647477010576af17c966f5027</update_guid>
+        <update_guid_history>ca65731647477010576af17c966f5027:-1183730666</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Projector">f795771607477010c0d7f8ed7c1ed0b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>t.man</sys_created_by>
+        <sys_created_on>2021-10-09 20:19:45</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>3d8b09c233024038bbd5d15d5d00e244</sys_id>
+        <sys_metadata>bd65731607477010c0d7f8ed7c1ed025</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Projector</sys_name>
+        <sys_package display_value="Loaner Request" source="x_cdltd_loaner_req">a2376257d84570107f44287bc4e4b97e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">a2376257d84570107f44287bc4e4b97e</sys_scope>
+        <sys_scope_delete display_value="">34fa41de280940c0b011c09d88c67a40</sys_scope_delete>
+        <sys_update_name>question_choice_bd65731607477010c0d7f8ed7c1ed025</sys_update_name>
+        <sys_update_version display_value="question_choice_bd65731607477010c0d7f8ed7c1ed025">4665731607477010c0d7f8ed7c1ed028</sys_update_version>
+        <sys_updated_by>t.man</sys_updated_by>
+        <sys_updated_on>2021-10-09 20:19:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
